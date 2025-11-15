@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate PDF Resume</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        #resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            padding: 20mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background: white;
+            color: #333;
+            text-align: left;
+        }
+        .header { text-align: center; margin-bottom: 20px; }
+        h1 { color: #2c3e50; margin: 0; }
+        .contact-info { margin: 10px 0; color: #666; }
+        .section { margin-bottom: 20px; }
+        .section-title { 
+            color: #f4b400; 
+            border-bottom: 2px solid #f4b400; 
+            padding-bottom: 5px; 
+            margin-bottom: 10px;
+        }
+        .item { margin-bottom: 15px; }
+        .item h3 { margin: 5px 0; }
+        .date { color: #666; font-style: italic; }
+        ul { margin: 5px 0; padding-left: 20px; }
+    </style>
+</head>
+<body>
+    <button onclick="generatePDF()">Generate and Download PDF Resume</button>
+    
+    <div id="resume">
+        <div class="header">
+            <h1>AKSHATA VADDODAGI</h1>
+            <div class="contact-info">Mysuru, Karnataka, India</div>
+            <div class="contact-info">+91 6360460934 | akshatavaddodagi@gmail.com</div>
+            <div class="contact-info">
+                LinkedIn: linkedin.com/in/akshata-vaddodagi-0629592b1 | 
+                GitHub: github.com/A-M14
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">PROFESSIONAL SUMMARY</h2>
+            <p>Motivated Computer Science Student skilled in programming, machine learning and web development. Experienced in developing AI-integrated projects that address real-world problems efficiently.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">EDUCATION</h2>
+            <div class="item">
+                <h3>VTU Regional Center Mysuru</h3>
+                <div>B.Tech in Computer Science & Engineering</div>
+                <div class="date">2022 - 2026 | CGPA: 8.95</div>
+            </div>
+            <div class="item">
+                <h3>Prarthana PU Science College</h3>
+                <div>Pre-University (PCMB)</div>
+                <div class="date">2020 - 2022 | Percentage: 90.16%</div>
+            </div>
+            <div class="item">
+                <h3>New English High School</h3>
+                <div>High School (SSLC)</div>
+                <div class="date">2017 - 2020 | Percentage: 89.96%</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">TECHNICAL SKILLS</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                <div style="flex: 1; min-width: 200px;">
+                    <h3>Programming</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <h3>AI/ML</h3>
+                    <ul>
+                        <li>TensorFlow</li>
+                        <li>Pandas</li>
+                        <li>NumPy</li>
+                        <li>Matplotlib</li>
+                        <li>OpenCV</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>SQL, MySQL</li>
+                        <li>Git, VS Code</li>
+                        <li>Google Colab</li>
+                        <li>Make, Vector Shift</li>
+                        <li>Gemini, ChatGPT, Claude</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="item">
+                <h3>Crop Recommendation and Yield Prediction</h3>
+                <ul>
+                    <li>Developed ML model using Scikit-learn achieving 90% accuracy</li>
+                    <li>Helps farmers choose optimal crops based on environmental factors</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>Voice-Based Virtual Assistant</h3>
+                <ul>
+                    <li>Built a voice-controlled assistant using HTML/CSS/JS + APIs</li>
+                    <li>Enables hands-free operation of various computer functions</li>
+                </ul>
+            </div>
+            <div class="item">
+                <h3>AI YouTube Automation</h3>
+                <ul>
+                    <li>Created an AI-powered agent that generates and uploads daily AI tools update videos</li>
+                    <li>Automated the entire content creation and upload process</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <ul>
+                <li>AI & ML Internship – Internz Learn (2024)</li>
+                <li>Generative AI for Beginners – Simplilearn (2025)</li>
+                <li>Generative AI Mastermind – OutSkill</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">ACHIEVEMENTS</h2>
+            <ul>
+                <li>Represented VTU in South Zone All India Baseball Championship (Women), 2023</li>
+                <li>Participated in VTU Hackathon, Mysore</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">LANGUAGES</h2>
+            <ul>
+                <li>English (Professional)</li>
+                <li>Kannada (Native)</li>
+                <li>Hindi (Conversational)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function generatePDF() {
+            const element = document.getElementById('resume');
+            const opt = {
+                margin: 10,
+                filename: 'Akshata_Vaddodagi_Resume.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            };
+
+            // Generate PDF
+            html2pdf().set(opt).from(element).save();
+        }
+
+        // Auto-generate and download after 1 second
+        setTimeout(generatePDF, 1000);
+    </script>
+</body>
+</html>

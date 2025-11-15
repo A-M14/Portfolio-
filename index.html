@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshata Vaddodagi | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">AV</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h4 class="greeting">Hi, I'm</h4>
+            <h1 class="name">Akshata Vaddodagi</h1>
+            <h2 class="role">Computer Science & Engineering Student</h2>
+            <p class="summary">Motivated Computer Science Student skilled in programming, machine learning, and web development. Experienced in developing AI-integrated projects that address real-world problems efficiently.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Get In Touch</a>
+                <button onclick="generateResumePDF()" class="btn secondary">Download CV</button>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/akshata-vaddodagi-0629592b1" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/A-M14" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:akshatavaddodagi@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="avatar"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I'm Akshata, a passionate Computer Science student at VTU Regional Center Mysuru with a strong interest in AI, machine learning, and web development. I love turning ideas into reality through code and am always eager to learn new technologies.</p>
+                <div class="personal-info">
+                    <div class="info-item">
+                        <span class="info-label">Email:</span>
+                        <span class="info-value">akshatavaddodagi@gmail.com</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Phone:</span>
+                        <span class="info-value">+91 6360460934</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Location:</span>
+                        <span class="info-value">Mysuru, Karnataka</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Python</div>
+                    <div class="skill-item">C</div>
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">Java</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS3</div>
+                    <div class="skill-item">JavaScript</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Data Science & AI/ML</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">TensorFlow</div>
+                    <div class="skill-item">Pandas</div>
+                    <div class="skill-item">NumPy</div>
+                    <div class="skill-item">Matplotlib</div>
+                    <div class="skill-item">OpenCV</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">Git</div>
+                    <div class="skill-item">VS Code</div>
+                    <div class="skill-item">Google Colab</div>
+                    <div class="skill-item">MySQL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Crop Recommendation & Yield Prediction</h3>
+                <p>ML model using Scikit-learn achieving 90% accuracy in predicting optimal crops and expected yields based on environmental factors.</p>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Scikit-learn</span>
+                    <span>Pandas</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Voice-Based Virtual Assistant</h3>
+                <p>Voice-controlled assistant built with HTML, CSS, JavaScript, and various APIs to perform tasks through voice commands.</p>
+                <div class="project-tags">
+                    <span>HTML/CSS/JS</span>
+                    <span>Web APIs</span>
+                    <span>Responsive</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>AI YouTube Automation</h3>
+                <p>AI-powered agent that generates and uploads daily AI tools update videos automatically.</p>
+                <div class="project-tags">
+                    <span>AI</span>
+                    <span>Automation</span>
+                    <span>YouTube API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>B.Tech in Computer Science & Engineering</h3>
+                    <h4>VTU Regional Center Mysuru</h4>
+                    <p class="timeline-date">2022 - 2026</p>
+                    <p>CGPA: 8.95</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Pre-University (PCMB)</h3>
+                    <h4>Prarthana PU Science College</h4>
+                    <p class="timeline-date">2020 - 2022</p>
+                    <p>Percentage: 90.16%</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>High School (SSLC)</h3>
+                    <h4>New English High School</h4>
+                    <p class="timeline-date">2017 - 2020</p>
+                    <p>Percentage: 89.96%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <h2 class="section-title">Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <h3>AI & ML Internship</h3>
+                <p>Internz Learn (2024)</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Generative AI for Beginners</h3>
+                <p>Simplilearn (2025)</p>
+            </div>
+            <div class="certificate-card">
+                <h3>Generative AI Mastermind</h3>
+                <p>OutSkill</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2 class="section-title">Achievements</h2>
+        <div class="achievements-grid">
+            <div class="achievement-card">
+                <i class="fas fa-trophy"></i>
+                <h3>South Zone All India Baseball Championship</h3>
+                <p>Represented VTU in Women's category, 2023</p>
+            </div>
+            <div class="achievement-card">
+                <i class="fas fa-code"></i>
+                <h3>VTU Hackathon Participant</h3>
+                <p>Participated in VTU Hackathon, Mysore</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>akshatavaddodagi@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 6360460934</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Mysuru, Karnataka, India</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">AV</div>
+            <p>Designed & Built by Akshata Vaddodagi</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/akshata-vaddodagi-0629592b1" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/A-M14" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:akshatavaddodagi@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Akshata Vaddodagi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- ScrollReveal Library -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
